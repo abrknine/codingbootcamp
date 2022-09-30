@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    background-color: rgb(16, 16, 16);
+    height:75px;
+  }
+  .logo{
+    position: absolute;
+    height:8%;
+    width: 15%;
+    top:1%;
+    left:3%;
+  }
+  .navbar li{
+   
+    float:left;
+    left:50%;
+    list-style: none; 
+    margin: 20px 20px;
+    font-size: 20px;
+}
+.navbar ul{
+    float: right;
+    overflow: auto;
+}
+.navbar li a{
+    font-family: "Open Sans",sans-serif;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.navbar li a:hover{
+    color:black;
+    font-weight: bold;
+    background-color: white;
+    
+}

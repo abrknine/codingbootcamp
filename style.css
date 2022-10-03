@@ -38,3 +38,28 @@
     background-color: white;
     
 }
+.image {
+    background-color: black;
+    color: white;
+    width: 280px;
+    height: 300px;
+    margin: 100px 600px;
+    line-height:28px;
+    padding: 12px 0px 0px 22px;
+    border-radius: 23px;
+}
+.material-symbols-outlined{
+    margin: 23px 100px;
+    /* font-weight: bold; */
+    width: 2300px;
+}
+.material-symbols-outlined {
+    /* width: 300px; */
+    align-items: center;
+}
+.swiper{
+    width: 100%;
+}
+.swiper-pagination{
+    margin: 0px 0px 180px 0px;
+}

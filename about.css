@@ -3,18 +3,18 @@
   width: 100%;
   height: 550px;
   background-image: linear-gradient(
-    45deg,
-    hsl(240deg 100% 20%) 1%,
-    hsl(289deg 100% 21%) 43%,
-    hsl(315deg 100% 27%) 50%,
-    hsl(329deg 100% 36%) 51%,
-    hsl(337deg 100% 43%) 51%,
-    hsl(357deg 91% 59%) 49%,
-    hsl(17deg 100% 59%) 49%,
-    hsl(34deg 100% 53%) 50%,
-    hsl(45deg 100% 50%) 57%,
-    hsl(55deg 99% 100% 50%)
-  );  padding-top: 20px;
+  45deg,
+  hsl(240deg 100% 20%) 1%,
+  hsl(289deg 100% 21%) 43%,
+  hsl(315deg 100% 27%) 50%,
+  hsl(329deg 100% 36%) 51%,
+  hsl(337deg 100% 43%) 51%,
+  hsl(357deg 91% 59%) 49%,
+  hsl(17deg 100% 59%) 49%,
+  hsl(34deg 100% 53%) 50%,
+  hsl(45deg 100% 50%) 57%,
+  hsl(55deg 100% 50%) 99%
+);
 }
 .absolute {
   position: absolute;

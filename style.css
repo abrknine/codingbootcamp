@@ -38,3 +38,60 @@
     background-color: white;
     
 }
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    box-sizing: inherit;
+
+
+}
+div{
+    display: block;
+    
+}
+.main_container{
+    box-shadow: 10px 10px 10px 10px whitesmoke;
+    border-radius: 1.5cm;
+     margin-top: 35px;
+     margin-left: 20%;
+     margin-right: 20%;
+     height: 451px;
+
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 12px;
+}
+.img{
+    display: block;
+    margin-top: 20px;
+    padding-top: 30px;
+    text-align: center;
+}
+button:hover{
+    opacity: 0.6;
+}
+button{
+    margin-top: 4px;
+    height: 45px;
+    width: 45%;
+    color: black;
+    font-size: larger;
+    font-weight: 500;
+    background-color: white;
+    border-color: black;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 28%;
+    margin-bottom: 6px;
+    transition: all 0.1s ease;
+}
+img{
+    border-radius: 20%;
+   margin-top: 22px;
+}

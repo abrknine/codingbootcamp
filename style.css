@@ -9,7 +9,6 @@
   --font-serif: "Cardo", serif;
 }
 
-
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -72,20 +71,14 @@
   max-width: 1200px;
   margin: 0 auto;
   font-family: var(--font-sans);
-}
-@media (min-width: 600px) {
-  .page-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 800px) {
-  .page-content {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+
 }
 
 .card {
   position: relative;
+  height: 350px;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -93,14 +86,10 @@
   width: 100%;
   text-align: center;
   color: rgb(4, 4, 4);
-  background-color: whitesmoke;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+  background-color: rgb(231, 235, 233);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
 }
-@media (min-width: 600px) {
-  .card {
-    height: 350px;
-  }
-}
+
 .card:before {
   content: "";
   position: absolute;
@@ -115,7 +104,7 @@
 }
 
 .card:after {
-  content: "";
+  transform: translateY(0);
   display: block;
   position: absolute;
   top: 0;
@@ -147,6 +136,7 @@
 .content {
     background-color: #e7e5e5;
   position: relative;
+  transform: translateY(calc(100% - 4.5rem));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,17 +184,7 @@
   outline: 1px dashed yellow;
   outline-offset: 3px;
 }
-
-@media (hover: hover) and (min-width: 600px) {
-  .card:after {
-    transform: translateY(0);
-  }
-
-  .content {
-    transform: translateY(calc(100% - 4.5rem));
-  }
-  
-  .card:hover,
+.card:hover,
 .card:focus-within {
     align-items: center;
   }
@@ -223,7 +203,3 @@
 .card:focus-within .content {
     transform: translateY(0);
   }
-
-}
-
-/* section-4 ends */

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Certificate for PadhegaIndia</title>
+    <link rel="stylesheet" href="cert.css">
+    <link rel="favicon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="confetti-wrapper">
+        
+    <header>
+        <img class="congo_img"src="https://img.freepik.com/premium-vector/congratulations-card-with-children-celebrating_102902-3037.jpg" alt="congo_logo">
+        <h4>You Have Successfully Completed the Course!<br>Enter Your Name to get your <i><b>Certificate</b></i></h4>
+        <div class="arrow bounce">
+            <img class="arr"src="https://cdn-icons-png.flaticon.com/512/159/159666.png">
+          </div>
+    </header>
+    <main>
+
+        <label for="name">Type Your Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+            maxlength="16">
+        <Button id="submitBtn">Get Certificate</Button>
+
+
+    </main>
+    <script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+    <script src="./FileSaver.js"></script>
+    <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+    <script src="./cert.js"></script>
+</div>
+</div>
+</body>
+
+</html>

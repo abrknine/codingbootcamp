@@ -38,3 +38,242 @@
     background-color: white;
     
 }
+
+    /* module1 css part */
+
+/* .left-block{
+   
+    display: grid;
+    grid-auto-columns: 50px;
+}
+.right-block{
+    width: 40%;
+} */
+.m1grid-container > div {
+    
+    text-align: left;
+    padding: 0px 0;
+
+    
+  }
+  .m1grid-container {
+    display: grid;
+    grid-auto-columns: 60%;
+    grid-gap: 10px;
+  
+    padding: 0px;
+  }
+  /* .m1left-block { grid-area: ; } */
+.m1right-block { grid-area: 1/2; }
+
+/* /progress flow/ */
+
+.stepper-wrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ccc;
+    margin-bottom: 6px;
+  }
+  
+  .stepper-item.active {
+    /* font-weight: bold; */
+  }
+  
+  /* .stepper-item.completed .step-counter {
+    background-color: #4bb543;
+  } */
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #4bb543;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+  /* /content grid 6 part/ */
+
+  .m1content{
+    position: absolute;
+    width: auto;
+    margin-left: 8%;
+    text-align: center;
+    left: 9%;
+    right: auto;
+    -ms-grid-row-align:60px;
+    grid-column-gap: 60px;
+  }
+  .m1content1{
+      /* border; */
+      height:300px;
+      width:300px;
+      background-color: rgb(31, 26, 26);
+      border-radius: 10%;
+      box-shadow: grey 15px 15px 10px;
+  }
+
+  .m1content2{
+    /* border; */
+    height:300px;
+    width:300px;
+    background-color: rgb(31, 26, 26);
+    border-radius: 10%;
+    box-shadow: grey 15px 15px 10px;
+}
+
+.m1content3{
+    /* border; */
+    height:300px;
+    width:300px;
+    background-color: rgb(31, 26, 26);
+    border-radius: 10%;
+    box-shadow: grey 15px 15px 10px;
+}
+
+.m1content4{
+    /* border; */
+    height:300px;
+    width:300px;
+    background-color: rgb(31, 26, 26);
+    border-radius: 10%;
+    box-shadow: grey 15px 15px 10px;
+}
+
+.m1content5{
+    /* border; */
+    height:300px;
+    width:300px;
+    background-color: rgb(31, 26, 26);
+    border-radius: 10%; 
+    box-shadow: grey 15px 15px 10px;
+}
+.m1content5:hover{
+  /* background-color: brown; */
+  color: red;
+}
+.m1contenta{
+  border-radius: 25px;
+}
+.content1a,.content1b,.content1c,.content1d,.content1e{
+  text-align: center;border-radius: 25%;width: 300px; text-decoration:solid;font-size: 25px;color:black;
+}
+.m1content1:hover{
+  /* background-color: rgb(189, 63, 63); */
+  transform: scale(1.1);
+  color:rgb(38, 46, 46);
+  height:310px;
+  
+}
+
+.m1content2:hover{
+  /* background-color: rgb(189, 63, 63); */
+  transform: scale(1.1);
+  color:rgb(38, 46, 46);
+  height:310px;
+  
+}
+
+.m1content3:hover{
+  transform: scale(1.1);
+  /* background-color: rgb(189, 63, 63); */
+  color:rgb(38, 46, 46);
+  height:310px;
+  
+}
+
+.m1content4:hover{
+  /* background-color: rgb(189, 63, 63); */
+  transform: scale(1.1);
+  color:rgb(38, 46, 46);
+  height:310px;
+  
+}
+
+.m1content5:hover{
+  /* background-color: rgb(189, 63, 63); */
+  transform: scale(1.1);
+  color:rgb(38, 46, 46);
+  height:310px;
+  
+}
+/* /BOTTOM PART THANKS/ */
+.bottompartm1content{
+background-color: black;
+color:yellow;
+margin-top: 55%;
+line-height: 50px;
+font-style:inherit ;
+width:100%;
+}
+
+.cert{
+  position: absolute;
+  margin-top: 48%;
+  background-color:black;
+  width:80%;
+  margin-left: 10%;
+  height:50px;
+}
+.con{
+ 
+  color: rgb(238, 238, 122);
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  margin-left: 40%;
+  margin-top:-1%;
+}
